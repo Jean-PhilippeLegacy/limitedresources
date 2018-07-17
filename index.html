@@ -1,0 +1,288 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Limited Resources</title>
+    <link rel="shortcut icon" href="images/m19-card/banner/favicon.ico" type="image/x-icon" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/DrawSVGPlugin.min.js"></script>
+    <script src="js/ScrambleTextPlugin.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loaderOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <header id="header" class="alt">
+        <h1 class="hidden">Limited Resources</h1>
+        <a class="desktop" href="#menu">Menu</a>
+        <a class="mobile" href="#menu"></a>
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li><a id="all-filter" data-filter-type="all" class="all button-filter">All</a></li>
+            <li><a id="color-filter" class="button-filter">Color</a></li>
+
+                <div class="color hidden">
+                    <li><a class="all button-filter" data-filter-type="white">White</a></li>
+                    <li><a class="all button-filter" data-filter-type="blue">Blue</a></li>
+                    <li><a class="all button-filter" data-filter-type="green">Green</a></li>
+                    <li><a class="all button-filter" data-filter-type="red">Red</a></li>
+                    <li><a class="all button-filter" data-filter-type="black">Black</a></li>
+                    <li><a class="all button-filter" data-filter-type="multi">Multi-color</a></li>
+                    <li><a class="all button-filter" data-filter-type="colorless">Colorless</a></li>
+                </div>
+            <li><a id="grade-filter" class="button-filter">Grade</a></li>
+
+                <div class="grade hidden">
+                    <li><a class="all button-filter" data-filter-type="1">A</a></li>
+                    <li><a class="all button-filter" data-filter-type="2">B</a></li>
+                    <li><a class="all button-filter" data-filter-type="3">C</a></li>
+                    <li><a class="all button-filter" data-filter-type="4">D</a></li>
+                    <li><a class="all button-filter" data-filter-type="5">F</a></li>
+                </div>
+
+            <!-- <li><a id="historic" data-filter-type="historic" class="button-filter">Historic</a></li> -->
+            <li><a id="build" class="button-filter">Build</a></li>
+          </ul>
+    </nav>
+
+    <!-- This will only be shown if there are more than one set available in the build option -->
+    <div id="buildIconMenu" class="hidden">
+        <div class="buildScrollIcon">
+            <img src="" alt="">
+        </div>
+        <div class="buildScrollIcon">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <section class="banner full">
+                <article>
+                    <img src="images/m19-card/banner/ajani.jpg" alt="Ajani" />
+                    <div class="inner">
+                        <header>
+                            <p>Ajani, Aversary of Tyrants</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/apex.jpg" alt="Apex of Power" />
+                    <div class="inner">
+                        <header>
+                            <p>Apex of Power</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/arisen-gorgon.jpg"  alt="Arisen Gorgon" />
+                    <div class="inner">
+                        <header>
+                            <p>Arisen Gorgon</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/fell-specter.jpg"  alt="Fell Specter" />
+                    <div class="inner">
+                        <header>
+                            <p>Fell Specter</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/liliana.jpg"  alt="Liliana" />
+                    <div class="inner">
+                        <header>
+                            <p>Liliana, the Necromancer</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/nicol-bolas.jpg"  alt="Nicol Bolas" />
+                    <div class="inner">
+                        <header>
+                            <p>Nicol Bolas, the Ravager</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/sarkhan.jpg"  alt="Sarkhan" />
+                    <div class="inner">
+                        <header>
+                            <p>Sarkhan, Fireblood</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/tezzeret.jpg"  alt="Tezzeret" />
+                    <div class="inner">
+                        <header>
+                            <p>Tezzeret, Artifice Master</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/vivien.jpg"  alt="Vivien" />
+                    <div class="inner">
+                        <header>
+                            <p>Vivien Reid</p>
+                        </header>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/m19-card/banner/vaevictis.jpg"  alt="vaevictis" />
+                    <div class="inner">
+                        <header>
+                            <p>Vaevictis Asmadi, the Dire</p>
+                        </header>
+                    </div>
+                </article>
+            </section>
+
+    <section class="wrapper style2">
+                <div class="inner">
+                        <div>
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p class="red">DISCLAIMER</p>
+                                        <h2>This is a studying tool and should never be used in any tournament. Only use before or after a tournament.<br><br>These grades are based off of the <a href="http://lrcast.com/" target="_blank">Limited Resources</a> podcast and from <a href="https://www.mtgcommunityreview.com/core-set-2019" target="_blank">community voting</a>(Note that the community votes are more for draft)</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+    </section>
+
+    <section id="two" class="wrapper style3">
+        <h2 class="hide hidden">Disclaimer Section</h2>
+                <div class="inner">
+                    <header class="align-center">
+                        <p>Grade Meaning</p>
+                        <h2>Grades are a quick summary of a card's power level.<br>The grades are as follows:</h2>
+                    </header>
+                </div>
+    </section>
+
+    <section class="wrapper style2">
+                <div class="inner">
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>A:</p>
+                                        <h2>Bomb. Always play and should strongly pull you in a color.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>B:</p>
+                                        <h2>Really Good. Not exactly a bomb but good enough to pull you in a color.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>C:</p>
+                                        <h2>Playable. These cards are not bad but not great. Once you have a color, look to these to fill out the rest of your deck.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>D:</p>
+                                        <h2>Filler. Your deck needs to be at least 40 cards and these cards help you get there.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>F:</p>
+                                        <h2>Trash. Don't Play.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>S/B:</p>
+                                        <h2>Sideboard. Pretty self-explanatory, cards that are good in the sideboard.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gradeBox">
+                            <div class="box">
+                                <div class="content">
+                                    <header class="align-center">
+                                        <p>Build:</p>
+                                        <h2>These cards are linear and can only be graded in decks that are built around this card. Power level drops significantly in decks not built around these cards.</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+    </section>
+
+    <section id="topOfScroll" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p class="special">Showing all cards filtered by:</p>
+                        <h2 id="filter-header">ALL</h2>
+                    </header>
+                </div>
+    </section>
+
+    <section id="three" class="wrapper style2">
+                <div class="inner">
+                    <form action="" method="post">
+                    <div class="gallery" id="cardSelection">
+                    </div>
+                    </form>
+                    <button class="hidden" id="submitButton">Submit</button>
+                </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

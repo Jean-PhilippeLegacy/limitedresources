@@ -1,0 +1,171 @@
+.hidden{
+	display:none;
+}
+
+header a{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.color a{
+    text-decoration: none !important;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.checkmark{
+    height:20px !important;
+    width: 20px !important;
+    display:inline !important;
+    margin-left:5px;
+}
+
+.max-width{
+    width:100% !important;
+}
+
+ul{
+    text-decoration: none;
+}
+
+.red{
+    color:red !important;
+}
+
+.style2 header a{
+    color:black !important;
+    text-decoration: underline !important;
+    background-color: white !important;
+}
+
+#cardSelection .style3{
+    width:100%;
+}
+
+#cardSelection .style3 .box{
+    background: none !important;
+}
+
+#cardSelection .style3 .box .content{
+    padding:0 !important;
+}
+
+#cardSelection .style3 h2{
+    font-size:70px;
+    margin-top:10px;
+}
+
+#buildIconMenu{
+    position: fixed;
+    right:30px;
+    top:250;
+    width:200px;
+    z-index: 3;
+}
+
+.buildScrollIcon{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+    padding:15px;
+}
+
+.buildScrollIcon:first-child{
+    margin-bottom:10px;
+}
+
+#submitButton{
+    width: 100%;
+    height: 100px;
+    font-size: 60px;
+}
+
+form .gallery .number-wrap{
+    padding:0px !important;
+    margin-top:50px;
+}
+
+#setTwo{
+    margin-top: 6rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-wrap{
+    position: relative !important;
+    width: 100% !important;
+}
+
+.number-wrap input{
+    width:30% !important;
+    height:500px !important;
+}
+
+.number-wrap .arrow{
+    position: absolute !important;
+    opacity:1;
+    z-index: 2;
+		font-size:200px;
+		left: calc(15% - 85.715px);
+}
+
+.number-wrap .down{
+    bottom:0 !important;
+}
+
+.number-wrap .number{
+    padding: 0.6rem !important;
+    border-radius: 25px !important;
+    border: solid 1px #ddd !important;
+    margin: 0 !important;
+    text-align: center !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: textfield !important;
+    font-size:60px !important;
+}
+
+.number-wrap .topImgInput{
+    margin-top: 0px;
+    height:500px !important;
+		float:right;
+}
+
+#loaderOverlay{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s ease-in-out infinite;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+}
+
+#topOfScroll{
+    clear: both;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (min-width:1024px){
+
+    #buildIconMenu{
+        right:50px;
+        top:100px;
+        width:150px;
+    }
+
+}
