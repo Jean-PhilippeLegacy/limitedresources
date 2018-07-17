@@ -6,3 +6,5 @@ You can also easily change the sets by changing the variables at the top of the 
 `var mainSet = "";
 var setOne = "";
 var setTwo = "";`.
+
+The styling was largely done with a bootstrap framework called Hielo found here: http://thefreewebsitetemplates.com/hielo-templated-html5-template.html
